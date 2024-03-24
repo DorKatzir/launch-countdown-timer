@@ -16,6 +16,8 @@ h1{
     line-height: 32px;
     /* identical to box height */
     letter-spacing: 0.26em;
+    margin-right: -0.26em;
+    padding-bottom: 110px;
 
     // color: #FEFEFF;
 }
@@ -25,13 +27,33 @@ h2:first-of-type{
     font-size: 80px;
     line-height: 106px;
     letter-spacing: -0.03em;
+    margin-right: 0.03em;
     color: #F75F85;
 }
-h2:not(:first-of-type){
+span{
     font-weight: 700;
     font-size: 14px;
     line-height: 19px;
     /* identical to box height */
     letter-spacing: 0.43em;
+    margin-right: -0.43em;
     color: #8F8BA2;
+}
+
+section.launching-soon{
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .countdown{
+        display: flex;
+        gap: 32px;
+        & > * {
+            width: 100%;
+            max-width: 148px;
+            // background-color: #fff;
+        }
+    }
 }
