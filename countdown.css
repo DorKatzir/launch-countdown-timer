@@ -1,14 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+:root {
+  /* Primary Colors */
+  --Grayish-blue: hsl(237, 18%, 59%);
+  --Soft-red: hsl(345, 95%, 68%);
+  /* Neutral Colors */
+  --White: hsl(0, 0%, 100%);
+  --Dark-desaturated: blue: hsl(236, 21%, 26%);
+  --Dark-blue: hsl(235, 16%, 14%);
+  --Very-dark-blue: hsl(234, 17%, 12%);
+}
+
 body {
+  font-family: "Red Hat Text", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #1a1823;
+  background-color: var(--Dark-blue);
 }
 
 .wrapper {
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 }
-.wrapper .bg {
+.wrapper footer {
+  margin-top: auto;
+}
+.wrapper footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.wrapper footer .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.bg {
   width: 100dvw;
   max-width: 1440px;
   height: 100dvh;
@@ -19,5 +48,5 @@ body {
   background-size: cover;
   background-position: bottom right;
   border-radius: 10px;
-  box-shadow: 0 0 20px hsla(240, 17%, 2%, 0.1);
+  box-shadow: 0 0 20px var(--Very-dark-blue);
 }
