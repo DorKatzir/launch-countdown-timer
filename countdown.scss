@@ -17,27 +17,31 @@ body{
     font-weight: 700;
     font-style: normal;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
     background-color: var(--Dark-blue);
+
+    overflow-x: hidden;
 }
 
 .wrapper{
+    margin: 0 auto;
     border-radius: 10px;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     padding-top: 140px;
-    padding-bottom: 71px;
+    margin-inline: 1rem;
 
     main{
-        outline: 2px solid rgb(141, 141, 141);
-        height: 100%;
-        max-height:587px;
+        // outline: 2px solid rgb(141, 141, 141);
+
+        height: 100dvh;
+        min-height: 587px;
         width: 100%;
         max-width: 688px;
    
@@ -53,6 +57,8 @@ body{
             margin-right: -0.26em;
             color: #FEFEFF;   
         }
+
+
         .countdown{
             padding-top: 110px;
      
@@ -62,27 +68,41 @@ body{
                 justify-content: space-between;
                 gap: 32px;
                 max-height: 150px;
-
                 .box{
                     width: 100%;
                     
                 }
             }
+            .text-group{
+                display: flex;
+                justify-content: space-between;
+                gap: 32px;
+                
+                h2.text{
+                    padding-top: 20px;
+                    flex-basis: 100%;
+                    text-align: center;
+                    font-size: 14px;
+                    letter-spacing: 0.43em;
+                    margin-right: -0.43em;
+                    color: #8F8BA2;
+                }
+            }
             
         }
+
+
+
         .social-icons{
             margin-top: auto;
             display: flex;
             gap: 32px;
         }
-
-
     }
 
 
     footer{   
-        position: absolute;
-        bottom: 0;
+        padding-top: 71px;
         .attribution { 
             font-size: 11px; 
             text-align: center; 
@@ -94,18 +114,25 @@ body{
 
 }
 
-.bg{
-    width: 100dvw;
-    max-width: 1440px;
-    height: 100dvh;
-    max-height: 800px;
-    aspect-ratio: 9 / 5;
-
-    background-image: url('./images/bg.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
+.bg-hills{
+    width: 100%;
+    // max-width: 1440px; 
+    height: 197px;
+    position: absolute;
+    top: 105%;
+    
+    background-image: url('./images/pattern-hills.svg');
     background-position: bottom right;
-
-    border-radius: 10px;
-    box-shadow: 0 0 20px var(--Very-dark-blue);
+    z-index: -1;
 }
+.bg-stars{
+    width: 100%;
+    height: 100dvh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('./images/bg-stars.svg');
+    
+    z-index: -2;
+}
+
