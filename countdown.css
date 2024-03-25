@@ -1,0 +1,11 @@
+.bg {
+  width: 100dvw;
+  max-width: 1440px;
+  min-height: 100dvh;
+  max-height: 800px;
+  aspect-ratio: 9/5;
+  background-image: url("./images/bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+}
