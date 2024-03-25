@@ -33,7 +33,7 @@ body {
   outline: 2px solid rgb(141, 141, 141);
   min-height: 587px;
   width: 100%;
-  max-width: 688px;
+  max-width: 720px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,6 +44,7 @@ body {
   letter-spacing: 0.26em;
   margin-right: -0.26em;
   color: #FEFEFF;
+  text-align: center;
 }
 .wrapper main .countdown {
   padding-top: 110px;
