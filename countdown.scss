@@ -35,8 +35,7 @@ body{
     padding-bottom: 71px;
 
     main{
-        // position: absolute;
-        outline: 5px solid white;
+        outline: 2px solid rgb(141, 141, 141);
         height: 100%;
         max-height:587px;
 
@@ -58,8 +57,10 @@ body{
             
         }
         .social-icons{
-            
             margin-top: auto;
+            display: flex;
+            gap: 32px;
+
         }
 
 
