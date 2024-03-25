@@ -19,7 +19,7 @@ h1 {
   padding-bottom: 110px;
 }
 
-h2:first-of-type {
+h2 {
   font-weight: 700;
   font-size: 80px;
   line-height: 106px;
@@ -36,6 +36,7 @@ span {
   letter-spacing: 0.43em;
   margin-right: -0.43em;
   color: #8F8BA2;
+  padding-top: 20px;
 }
 
 section.launching-soon {
@@ -50,6 +51,20 @@ section.launching-soon .countdown {
   gap: 32px;
 }
 section.launching-soon .countdown > * {
-  width: 100%;
-  max-width: 148px;
+  flex: 1;
+  min-width: 148px;
+}
+section.launching-soon .countdown > * h2 {
+  position: relative;
+}
+section.launching-soon .countdown > * h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 148px;
+  height: 150px;
+  background-image: url("images/tick-group.svg");
+  background-repeat: no-repeat;
+  z-index: -1;
 }
