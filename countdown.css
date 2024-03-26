@@ -94,6 +94,6 @@ body {
   inset: 0;
   background-image: url("./images/bg_desktop.png");
   background-size: cover;
-  background-position: bottom right;
+  background-position: bottom center;
   z-index: -1;
 }
