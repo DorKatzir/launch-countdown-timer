@@ -15,7 +15,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  background-color: var(--Dark-blue);
+  background-color: hsl(271.43, 22.58%, 18.24%);
   overflow-x: hidden;
 }
 
