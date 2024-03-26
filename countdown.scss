@@ -26,6 +26,7 @@ body{
 }
 
 .wrapper{
+    position: relative;
     margin: 0 auto;
     border-radius: 10px;
 
@@ -112,28 +113,44 @@ body{
             color: hsl(228, 45%, 44%); 
         } 
     }
-
 }
 
-.bg-hills{
-    width: 100%;
-    // max-width: 1440px; 
-    height: 197px;
+.wrapper::before{
+    content: '';
     position: absolute;
-    top: 100%;
-    
-    background-image: url('./images/pattern-hills.svg');
+    inset: 0;
+
+    background-image: url('./images/bg_desktop.png');
+    background-size: cover;
     background-position: bottom right;
     z-index: -1;
 }
-.bg-stars{
-    width: 100%;
-    height: 100dvh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url('./images/bg-stars.svg');
+
+
+
+
+
+
+
+// .bg-hills{
+//     width: 100%;
+//     // max-width: 1440px; 
+//     height: 197px;
+//     position: absolute;
+//     top: 100%;
     
-    z-index: -2;
-}
+//     background-image: url('./images/pattern-hills.svg');
+//     background-position: bottom right;
+//     z-index: -1;
+// }
+// .bg-stars{
+//     width: 100%;
+//     height: 100dvh;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     background-image: url('./images/bg-stars.svg');
+    
+//     z-index: -2;
+// }
 
