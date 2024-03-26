@@ -78,14 +78,18 @@ body {
   gap: 32px;
 }
 .wrapper footer {
+  color: #8F8BA2;
   padding-top: 71px;
+  padding-bottom: 1rem;
 }
 .wrapper footer .attribution {
   font-size: 11px;
   text-align: center;
+  text-transform: uppercase;
+  font-weight: lighter;
 }
 .wrapper footer .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: white;
 }
 
 .wrapper::before {
