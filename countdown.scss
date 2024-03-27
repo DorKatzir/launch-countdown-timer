@@ -38,9 +38,9 @@ body{
         outline: 1px solid rgb(141 141 141 / .12 );
 
         // height: 100%;
-        min-height: 587px;
-        width: 100%;
-        max-width: 720px;
+        // min-height: 587px;
+        // width: 100%;
+        // max-width: 720px;
    
         display: flex;
         flex-direction: column;
@@ -58,7 +58,7 @@ body{
 
 
         .countdown{
-            padding-top: 110px;
+            // padding-top: 110px;
      
             .box-group{
                 // background-color: red;
@@ -90,42 +90,41 @@ body{
         }
 
 
-
-        .social-icons{
-            margin-top: auto;
-            display: flex;
-            gap: 32px;
-        }
     }
-
-
+    
+    
     footer{   
         color: #8F8BA2;
-        padding-top: 71px;
-        padding-bottom: 1rem;
+        // padding-top: 71px;
+        // padding-bottom: 1rem;
         .attribution { 
             font-size: 10px; 
             text-align: center; 
             text-transform: uppercase;
-            font-weight:lighter;
-            
+            font-weight:lighter;  
         }
         .attribution a { 
             color: white;
         } 
+
+        .social-icons{
+            // margin-top: auto;
+            display: flex;
+            gap: 32px;
+        }
     }
 }
 
-.wrapper::before{
-    content: '';
-    position: absolute;
-    inset: 0;
+// .wrapper::before{
+//     content: '';
+//     position: absolute;
+//     inset: 0;
 
-    background-image: url('./images/bg_desktop.png');
-    background-size: cover;
-    background-position: bottom center;
-    z-index: -1;
-}
+//     background-image: url('./images/bg_desktop.png');
+//     background-size: cover;
+//     background-position: bottom center;
+//     z-index: -1;
+// }
 
 
 

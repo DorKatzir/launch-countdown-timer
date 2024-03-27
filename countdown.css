@@ -31,9 +31,6 @@ body {
 }
 .wrapper main {
   outline: 1px solid rgba(141, 141, 141, 0.12);
-  min-height: 587px;
-  width: 100%;
-  max-width: 720px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,9 +42,6 @@ body {
   margin-right: -0.26em;
   color: #FEFEFF;
   text-align: center;
-}
-.wrapper main .countdown {
-  padding-top: 110px;
 }
 .wrapper main .countdown .box-group {
   display: flex;
@@ -72,15 +66,8 @@ body {
   margin-right: -0.43em;
   color: #8F8BA2;
 }
-.wrapper main .social-icons {
-  margin-top: auto;
-  display: flex;
-  gap: 32px;
-}
 .wrapper footer {
   color: #8F8BA2;
-  padding-top: 71px;
-  padding-bottom: 1rem;
 }
 .wrapper footer .attribution {
   font-size: 10px;
@@ -91,13 +78,7 @@ body {
 .wrapper footer .attribution a {
   color: white;
 }
-
-.wrapper::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("./images/bg_desktop.png");
-  background-size: cover;
-  background-position: bottom center;
-  z-index: -1;
+.wrapper footer .social-icons {
+  display: flex;
+  gap: 32px;
 }
