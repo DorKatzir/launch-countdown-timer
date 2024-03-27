@@ -21,16 +21,11 @@ body{
 }
 
 .wrapper{
-    position: relative;
-    margin: 0 auto;
-    border-radius: 10px;
-
+    margin-inline: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-
-    padding-top: 140px;
+    // padding-top: 140px;
 
     main{
         outline: 1px solid rgb(141 141 141 / .12 );
@@ -113,48 +108,21 @@ body{
     }
 }
 
-// .wrapper::before{
-//     content: '';
-//     position: absolute;
-//     inset: 0;
 
-//     background-image: url('./images/bg_desktop.png');
-//     background-size: cover;
-//     background-position: bottom center;
-//     z-index: -1;
-// }
 
 .grad-bg{
-    // width: 100%;
     height: 100dvh;
     background-image: linear-gradient(180deg, #1E1E28 0%, #241E2C 73.56%, #251D2C 73.56%);
-    // background-repeat: no-repeat;
 }
 
+.bg-stars{
+    width: 1440px;
+    height: 569px;
+    background-image: url('./images/bg-stars.svg');
+}
 
-
-
-
-
-// .bg-hills{
-//     width: 100%;
-//     // max-width: 1440px; 
-//     height: 197px;
-//     position: absolute;
-//     top: 100%;
-    
-//     background-image: url('./images/pattern-hills.svg');
-//     background-position: bottom right;
-//     z-index: -1;
-// }
-// .bg-stars{
-//     width: 100%;
-//     height: 100dvh;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     background-image: url('./images/bg-stars.svg');
-    
-//     z-index: -2;
-// }
-
+.bg-hills{
+    width: 1440px;
+    height: 197px;
+    background-image: url('./images/pattern-hills.svg');
+}
