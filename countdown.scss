@@ -16,25 +16,28 @@ body{
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    // background-color: hsl(271.43deg 22.58% 18.24%);
+    background-color: #1E1E28;
     overflow-x: hidden;
+
+    min-height: 100dvh;
+    display: grid;
+    place-items: center;  
 }
 
 .wrapper{
-    margin-inline: auto;
+   
     display: flex;
     flex-direction: column;
     align-items: center;
     // padding-top: 140px;
+    max-width: 1440px;
+
+    border-radius: 20px;
+    overflow: clip;
+    box-shadow: 0px 10px 10px #1E1E28;
 
     main{
         outline: 1px solid rgb(141 141 141 / .12 );
-
-        // height: 100%;
-        // min-height: 587px;
-        // width: 100%;
-        // max-width: 720px;
-   
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -110,8 +113,8 @@ body{
 
 
 
-.grad-bg{
-    height: 100dvh;
+.bg-grad{
+    // height: 100dvh;
     background-image: linear-gradient(180deg, #1E1E28 0%, #241E2C 73.56%, #251D2C 73.56%);
 }
 

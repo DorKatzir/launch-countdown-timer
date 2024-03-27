@@ -15,14 +15,21 @@ body {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+  background-color: #1E1E28;
   overflow-x: hidden;
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
 }
 
 .wrapper {
-  margin-inline: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1440px;
+  border-radius: 20px;
+  overflow: clip;
+  box-shadow: 0px 10px 10px #1E1E28;
 }
 .wrapper main {
   outline: 1px solid rgba(141, 141, 141, 0.12);
@@ -78,8 +85,7 @@ body {
   gap: 32px;
 }
 
-.grad-bg {
-  height: 100dvh;
+.bg-grad {
   background-image: linear-gradient(180deg, #1E1E28 0%, #241E2C 73.56%, #251D2C 73.56%);
 }
 
