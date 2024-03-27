@@ -91,8 +91,12 @@ body{
     
     footer{   
         color: #8F8BA2;
-        // padding-top: 71px;
-        // padding-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 71px;
+       
         .attribution { 
             font-size: 10px; 
             text-align: center; 
