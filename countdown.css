@@ -27,6 +27,7 @@ body {
   flex-direction: column;
   align-items: center;
   max-width: 1440px;
+  width: 100%;
   border-radius: 20px;
   overflow: clip;
 }
@@ -81,7 +82,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   font-weight: lighter;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 .wrapper footer .attribution a {
   color: white;
@@ -96,13 +97,19 @@ body {
 }
 
 .bg-stars {
-  width: 1440px;
+  width: min(100%, 1440px);
   height: 569px;
   background-image: url("./images/bg-stars.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
 }
 
 .bg-hills {
-  width: 1440px;
+  width: min(100%, 1440px);
   height: 197px;
   background-image: url("./images/pattern-hills.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
 }
