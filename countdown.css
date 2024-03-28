@@ -86,6 +86,12 @@ body {
 }
 .wrapper footer .attribution a {
   color: white;
+  display: inline-block;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+.wrapper footer .attribution a:hover, .wrapper footer .attribution a :focus {
+  color: var(--Soft-red);
 }
 .wrapper footer .social-icons {
   display: flex;

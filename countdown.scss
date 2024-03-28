@@ -107,6 +107,13 @@ body{
         }
         .attribution a { 
             color: white;
+            display: inline-block;
+            transition: all .25s ease-in-out;
+            cursor: pointer;
+
+            &:hover, :focus{
+                color: var(--Soft-red);
+            }
         } 
 
         .social-icons{
