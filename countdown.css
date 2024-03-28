@@ -91,6 +91,14 @@ body {
   display: flex;
   gap: 32px;
 }
+.wrapper footer .social-icons .social-link {
+  display: block;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+.wrapper footer .social-icons .social-link :hover {
+  fill: var(--Soft-red);
+}
 
 .bg-grad {
   background-image: linear-gradient(180deg, #1E1E28 0%, #241E2C 73.56%);
