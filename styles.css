@@ -25,12 +25,7 @@ body {
 .flip-clock {
   text-align: center;
   perspective: 400px;
-  margin: 20px auto;
-}
-.flip-clock *,
-.flip-clock *:before,
-.flip-clock *:after {
-  box-sizing: border-box;
+  color: var(--Grayish-blue);
 }
 
 .flip-clock__piece {
@@ -39,7 +34,8 @@ body {
 }
 
 .flip-clock__slot {
-  font-size: 2vw;
+  font-size: min(2vw, 0.875rem);
+  letter-spacing: 0.43em;
 }
 
 span {

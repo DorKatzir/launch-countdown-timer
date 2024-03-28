@@ -2,22 +2,18 @@
 .flip-clock {
   text-align: center;
   perspective: 400px;
-  margin: 20px auto;
-  
-  *,
-  *:before,
-  *:after { box-sizing: border-box; }
+//   margin: 20px auto;
+  color: var(--Grayish-blue);
 }
 
 .flip-clock__piece {
   display: inline-block;
   margin: 0 clamp(5px, 3vw, 32px); // Dror
-//   max-width: 150px;
-//   max-height: 148px;
 }
 
 .flip-clock__slot {
-  font-size: 2vw;
+    font-size: min(2vw, 0.875rem);
+    letter-spacing: 0.43em;
 }
 span{
   display: block;
