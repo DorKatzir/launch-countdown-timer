@@ -35,7 +35,7 @@ body {
 
 .flip-clock__piece {
   display: inline-block;
-  margin: 0 5px;
+  margin: 0 clamp(5px, 3vw, 32px);
 }
 
 .flip-clock__slot {
@@ -72,22 +72,21 @@ span {
 .card__back::after {
   display: block;
   height: 0.72em;
-  color: #ccc;
+  color: var(--Soft-red);
   background: #2C2C44;
   padding: 0.25em 0.25em;
   border-radius: 0.15em 0.15em 0 0;
-  backface-visiblity: hidden;
+  backface-visibility: hidden;
   transform-style: preserve-3d;
   width: 1.8em;
   transform: translateZ(0);
 }
 
 .card__bottom {
-  color: #FFF;
+  color: var(--Soft-red);
   position: absolute;
   top: 50%;
   left: 0;
-  border-top: solid 1px #000;
   background: #34364F;
   border-radius: 0 0 0.15em 0.15em;
   pointer-events: none;
@@ -107,8 +106,8 @@ span {
 .card__back {
   position: absolute;
   top: 0;
-  height: 100%;
   left: 0%;
+  height: 100%;
   pointer-events: none;
 }
 

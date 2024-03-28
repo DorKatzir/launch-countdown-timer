@@ -11,7 +11,9 @@
 
 .flip-clock__piece {
   display: inline-block;
-  margin: 0 5px;
+  margin: 0 clamp(5px, 3vw, 32px); // Dror
+//   max-width: 150px;
+//   max-height: 148px;
 }
 
 .flip-clock__slot {
@@ -50,22 +52,22 @@ $borderRadius: 0.15em;
 .card__back::after {
   display: block;
   height: $halfHeight;
-  color: #ccc;
+  color: var(--Soft-red);
   background: #2C2C44; // Dror
   padding: 0.25em 0.25em;
   border-radius: $borderRadius $borderRadius 0 0;
-  backface-visiblity: hidden;
+  backface-visibility: hidden;
   transform-style: preserve-3d;
   width: 1.8em;
   transform: translateZ(0);
 }
 
 .card__bottom { 
-  color: #FFF;
+  color: var(--Soft-red);
   position: absolute;
   top: 50%;
   left: 0;
-  border-top: solid 1px #000;
+//   border-top: solid 1px rgba(0, 0, 0, 0.05);
   background: #34364F; // Dror 
   border-radius: 0 0 $borderRadius $borderRadius; 
   pointer-events: none;
@@ -79,14 +81,14 @@ $borderRadius: 0.15em;
 
 .card__back::before,
 .card__bottom::after {
-  content: attr(data-value);
+    content: attr(data-value);     
 }
 
 .card__back {
   position: absolute;
   top: 0;
-  height: 100%;
   left: 0%;
+  height: 100%;
   pointer-events: none;
 }
 
