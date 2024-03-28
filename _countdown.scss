@@ -2,6 +2,7 @@
 .flip-clock {
   text-align: center;
   perspective: 400px;
+  
 //   margin: 20px auto;
   color: var(--Grayish-blue);
 }
@@ -31,7 +32,6 @@ $borderRadius: 0.15em;
   padding-bottom: $halfHeight;
   font-size: 9vw;
   line-height: 0.95;
-  
 }
 
 .card::after{
@@ -41,11 +41,13 @@ $borderRadius: 0.15em;
   bottom: -10px;
   background-color: #1A1A24;
   border-radius: $borderRadius;
-  z-index:-5;
+  z-index:-1;
 }
 
-
-
+// .card__top{
+//     perspective: 100px;
+//     transform: 3s;
+// }
 
 .card__top,
 .card__bottom,
@@ -69,12 +71,12 @@ $borderRadius: 0.15em;
   position: absolute;
   top: 50%;
   left: 0;
-//   border-top: solid 1px rgba(0, 0, 0, 0.05);
   background: #34364F; // Dror 
   border-radius: 0 0 $borderRadius $borderRadius; 
   pointer-events: none;
   overflow: hidden;
   clip-path: polygon( 0% 88.406%,0% 88.406%,0.071% 90.286%,0.276% 92.07%,0.603% 93.734%,1.043% 95.253%,1.583% 96.604%,2.213% 97.763%,2.921% 98.706%,3.697% 99.409%,4.529% 99.848%,5.405% 100%,94.595% 100%,94.595% 100%,95.471% 99.848%,96.303% 99.409%,97.079% 98.706%,97.787% 97.763%,98.417% 96.604%,98.957% 95.253%,99.397% 93.734%,99.724% 92.07%,99.929% 90.286%,100% 88.406%,100% 8.696%,100% 8.696%,99.342% 8.582%,98.719% 8.252%,98.137% 7.725%,97.606% 7.018%,97.133% 6.149%,96.728% 5.136%,96.398% 3.996%,96.153% 2.748%,95.999% 1.41%,95.946% 0%,4.054% 0%,4.054% 0%,4.001% 1.41%,3.847% 2.748%,3.602% 3.996%,3.272% 5.136%,2.867% 6.149%,2.394% 7.018%,1.863% 7.725%,1.281% 8.252%,0.658% 8.582%,0% 8.696%,0% 88.406% );
+
 }
 
 .card__bottom::after {
@@ -84,15 +86,17 @@ $borderRadius: 0.15em;
 
 .card__back::before,
 .card__bottom::after {
-    content: attr(data-value);     
+    content: attr(data-value); 
 }
 
 .card__back {
-  position: absolute;
-  top: 0;
-  left: 0%;
-  height: 100%;
-  pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    height: 100%;
+    pointer-events: none;
+    perspective: 300px;
+    transform-style: preserve-3d;  
 }
 
 .card__back::before {

@@ -59,7 +59,7 @@ span {
   bottom: -10px;
   background-color: #1A1A24;
   border-radius: 0.15em;
-  z-index: -5;
+  z-index: -1;
 }
 
 .card__top,
@@ -109,6 +109,8 @@ span {
   left: 0%;
   height: 100%;
   pointer-events: none;
+  perspective: 300px;
+  transform-style: preserve-3d;
 }
 
 .card__back::before {
