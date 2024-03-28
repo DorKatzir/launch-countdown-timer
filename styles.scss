@@ -1,80 +1,173 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
 
+:root{
+    /* Primary Colors */
+    --Grayish-blue: hsl(237, 18%, 59%);
+    --Soft-red: hsl(345, 95%, 68%);
+
+    /* Neutral Colors */
+    --White: hsl(0, 0%, 100%);
+    --Dark-desaturated: blue: hsl(236, 21%, 26%);
+    --Dark-blue: hsl(235, 16%, 14%);
+    --Very-dark-blue: hsl(234, 17%, 12%);
+}
+
 body{
-    background-color: #2F2439;
     font-family: "Red Hat Text", sans-serif;
-    font-style: normal;
     font-optical-sizing: auto;
-    color: rgb(182, 182, 182);
-    text-transform: uppercase;
-}
-
-h1{
-    font-family: 'Red Hat Text';
     font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
-    /* identical to box height */
-    letter-spacing: 0.26em;
-    margin-right: -0.26em;
-    padding-bottom: 110px;
+    font-style: normal;
+    background-color: #1E1E28;
+    overflow-x: hidden;
 
-    // color: #FEFEFF;
-}
-
-h2{
-    font-weight: 700;
-    font-size: 80px;
-    line-height: 106px;
-    letter-spacing: -0.03em;
-    margin-right: 0.03em;
-    color: #F75F85;
-}
-span{
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 19px;
-    /* identical to box height */
-    letter-spacing: 0.43em;
-    margin-right: -0.43em;
-    color: #8F8BA2;
-    padding-top: 20px;
-}
-
-section.launching-soon{
     min-height: 100dvh;
+    display: grid;
+    place-items: center;  
+}
+
+@import 'countdown';
+
+.wrapper{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    .countdown{
-        display: flex;
-        gap: 32px;
-       
-
-        & > * {
-            flex: 1;
-            min-width: 148px;
-           
-
-            h2{
-                position: relative;
-                &::before{
-                    content: '';
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    width: 148px;
-                    height: 150px;
-                    background-image: url('images/tick-group.svg');
-                    background-repeat: no-repeat;
-                    z-index: -1;
-                }
-            }
-
-        }
-
+    // padding-top: 140px;
+    max-width: 1440px;
+    width: 100%;
+    border-radius: 0px;
+    
+    @media(min-width:1440px){
+        border-radius: 20px;
+        overflow: clip;
     }
 
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 110px;
+
+        text-transform: uppercase;
+
+        .title{
+            font-size: 24px;
+            letter-spacing: 0.26em;
+            margin-right: -0.26em;
+            color: #FEFEFF; 
+            text-align: center;  
+        }
+
+
+        .countdown{
+            // 
+            
+        }
+
+
+    }
+    
+    
+    footer{   
+        color: #8F8BA2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 6rem;
+       
+        .attribution { 
+            font-size: 10px; 
+            text-align: center; 
+            text-transform: uppercase;
+            font-weight:lighter; 
+            padding-bottom: .5rem; 
+        }
+        .attribution a { 
+            color: white;
+            display: inline-block;
+            transition: all .25s ease-in-out;
+            cursor: pointer;
+
+            &:hover, :focus{
+                color: var(--Soft-red);
+            }
+        } 
+
+        .social-icons{
+            display: flex;
+            gap: 32px;
+
+            .social-link{
+                display: block;
+                transition: all .25s ease-in-out;
+                cursor: pointer;
+                :hover{
+                    fill: var(--Soft-red);
+                }
+            }
+        }
+    }
+}
+
+
+.bg-grad{
+    // height: 100dvh;
+    background-image: linear-gradient(180deg, #1E1E28 0%, #241E2C 73.56%);
+}
+
+.bg-stars{
+    width: min(100%, 1440px);
+    height: 569px;
+    background-image: url('./images/bg-stars.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+}
+
+.bg-hills{
+    width: min(100%, 1440px);
+    height: 197px;
+    background-image: url('./images/pattern-hills.svg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+}
+
+
+/* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
+/** {
+  scrollbar-width: thin;
+  scrollbar-color: #2F2439 #1E1E28;
+}*/
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background-color: #1a1823;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #1E1E28;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #1E1E28;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  background-color: #2F2439;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #2F2439;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #2F2439;
 }
