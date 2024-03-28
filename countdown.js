@@ -113,7 +113,10 @@ var deadline = new Date(Date.parse(new Date()) + 12 * 24 * 60 * 60 * 1000)
 var c = new Clock(deadline, function () {
 	alert('countdown complete')
 })
-document.body.appendChild(c.el)
+
+
+const countdown = document.getElementById('countdown')
+countdown.appendChild(c.el)
 
 // var clock = new Clock();
 // document.body.appendChild(clock.el);
