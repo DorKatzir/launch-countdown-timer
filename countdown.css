@@ -46,29 +46,6 @@ body {
   color: #FEFEFF;
   text-align: center;
 }
-.wrapper main .countdown .box-group {
-  display: flex;
-  justify-content: space-between;
-  gap: 32px;
-  max-height: 150px;
-}
-.wrapper main .countdown .box-group .box {
-  width: 100%;
-}
-.wrapper main .countdown .text-group {
-  display: flex;
-  justify-content: space-between;
-  gap: 32px;
-}
-.wrapper main .countdown .text-group h2.text {
-  padding-top: 20px;
-  flex-basis: 100%;
-  text-align: center;
-  font-size: 14px;
-  letter-spacing: 0.43em;
-  margin-right: -0.43em;
-  color: #8F8BA2;
-}
 .wrapper footer {
   color: #8F8BA2;
   display: flex;
