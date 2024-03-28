@@ -21,6 +21,7 @@ span{
   padding-top: 2rem;
   text-transform: uppercase;
 }
+
 $halfHeight: 0.72em;
 $borderRadius: 0.15em;
 
@@ -30,6 +31,7 @@ $borderRadius: 0.15em;
   padding-bottom: $halfHeight;
   font-size: 9vw;
   line-height: 0.95;
+  
 }
 
 .card::after{
@@ -42,20 +44,24 @@ $borderRadius: 0.15em;
   z-index:-5;
 }
 
+
+
+
 .card__top,
 .card__bottom,
 .card__back::before,
 .card__back::after {
-  display: block;
-  height: $halfHeight;
-  color: var(--Soft-red);
-  background: #2C2C44; // Dror
-  padding: 0.25em 0.25em;
-  border-radius: $borderRadius $borderRadius 0 0;
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
-  width: 1.8em;
-  transform: translateZ(0);
+    display: block;
+    height: $halfHeight;
+    color: var(--Soft-red);
+    background: #2C2C44; // Dror
+    padding: 0.25em 0.25em;
+    border-radius: $borderRadius $borderRadius 0 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    width: 1.8em;
+    transform: translateZ(0);
+    clip-path: polygon( 0% 11.268%,0% 11.268%,0.071% 9.44%,0.276% 7.706%,0.603% 6.089%,1.043% 4.613%,1.583% 3.3%,2.213% 2.174%,2.921% 1.258%,3.697% 0.574%,4.529% 0.147%,5.405% 0%,94.595% 0%,94.595% 0%,95.471% 0.147%,96.303% 0.574%,97.079% 1.258%,97.787% 2.174%,98.417% 3.3%,98.957% 4.613%,99.397% 6.089%,99.724% 7.706%,99.929% 9.44%,100% 11.268%,100% 91.549%,100% 91.549%,99.342% 91.66%,98.719% 91.98%,98.137% 92.493%,97.606% 93.18%,97.133% 94.024%,96.728% 95.009%,96.398% 96.116%,96.153% 97.329%,95.999% 98.629%,95.946% 100%,4.054% 100%,4.054% 100%,4.001% 98.629%,3.847% 97.329%,3.602% 96.116%,3.272% 95.009%,2.867% 94.024%,2.394% 93.18%,1.863% 92.493%,1.281% 91.98%,0.658% 91.66%,0% 91.549%,0% 11.268% );
 }
 
 .card__bottom { 
@@ -68,6 +74,7 @@ $borderRadius: 0.15em;
   border-radius: 0 0 $borderRadius $borderRadius; 
   pointer-events: none;
   overflow: hidden;
+  clip-path: polygon( 0% 88.406%,0% 88.406%,0.071% 90.286%,0.276% 92.07%,0.603% 93.734%,1.043% 95.253%,1.583% 96.604%,2.213% 97.763%,2.921% 98.706%,3.697% 99.409%,4.529% 99.848%,5.405% 100%,94.595% 100%,94.595% 100%,95.471% 99.848%,96.303% 99.409%,97.079% 98.706%,97.787% 97.763%,98.417% 96.604%,98.957% 95.253%,99.397% 93.734%,99.724% 92.07%,99.929% 90.286%,100% 88.406%,100% 8.696%,100% 8.696%,99.342% 8.582%,98.719% 8.252%,98.137% 7.725%,97.606% 7.018%,97.133% 6.149%,96.728% 5.136%,96.398% 3.996%,96.153% 2.748%,95.999% 1.41%,95.946% 0%,4.054% 0%,4.054% 0%,4.001% 1.41%,3.847% 2.748%,3.602% 3.996%,3.272% 5.136%,2.867% 6.149%,2.394% 7.018%,1.863% 7.725%,1.281% 8.252%,0.658% 8.582%,0% 8.696%,0% 88.406% );
 }
 
 .card__bottom::after {
