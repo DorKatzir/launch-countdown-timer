@@ -29,14 +29,13 @@ body {
   width: 100%;
   max-width: 720px;
   display: flex;
-  gap: clamp(10px, 2vw, 32px);
+  gap: clamp(18px, 3vw, 32px);
 }
 
 .flip-clock__piece {
   width: 100%;
   height: 100%;
-  max-width: 148px;
-  max-height: 140px;
+  aspect-ratio: 35/37;
 }
 
 .flip-clock__slot {
@@ -117,6 +116,11 @@ body {
   transform-style: preserve-3d;
 }
 
+@media (max-width: 600px) {
+  .card__back {
+    perspective: 90px;
+  }
+}
 .card__back::before {
   position: relative;
   z-index: -1;
