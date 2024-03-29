@@ -29,7 +29,7 @@ body {
   width: 100%;
   max-width: 720px;
   display: flex;
-  gap: clamp(5px, 2vw, 32px);
+  gap: clamp(10px, 2vw, 32px);
 }
 
 .flip-clock__piece {
@@ -51,8 +51,8 @@ body {
 .card {
   display: block;
   position: relative;
-  padding-bottom: 4.375rem;
-  font-size: 80px;
+  padding-bottom: 0.93em;
+  font-size: min(9vw, 5rem);
   letter-spacing: -0.03em;
 }
 
@@ -60,7 +60,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  bottom: -10px;
+  transform: translateY(clamp(5px, 2vw, 10px));
   background-color: #1A1A24;
   border-radius: 0.15em;
   z-index: -3;
@@ -71,7 +71,7 @@ body {
 .card__back::before,
 .card__back::after {
   display: block;
-  height: 4.375rem;
+  height: 0.93em;
   color: #de456b;
   background: #2C2C44;
   padding: 0.25em 0.25em;
@@ -99,7 +99,7 @@ body {
 
 .card__bottom::after {
   display: block;
-  margin-top: -4.375rem;
+  margin-top: -0.93em;
 }
 
 .card__back::before,

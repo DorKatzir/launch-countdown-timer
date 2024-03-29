@@ -7,7 +7,7 @@
     max-width: 720px;
 
     display: flex;
-    gap: clamp(5px, 2vw, 32px);
+    gap: clamp(10px, 2vw, 32px);
   
     // background-color: pink;
 }
@@ -17,8 +17,6 @@
   height: 100%;
   max-width: 148px;
   max-height: 140px;
-//   background-color: #fff;
-  
 }
 
 .flip-clock__slot {
@@ -31,7 +29,8 @@
     color: var(--Grayish-blue);
 }
 
-$halfHeight: 4.375rem;
+
+$halfHeight: 0.93em;
 $borderRadius: 0.15em;
 
 .card {
@@ -39,18 +38,16 @@ $borderRadius: 0.15em;
     position: relative; 
     padding-bottom: $halfHeight;
 
-    font-size: 80px;
+    font-size: min(9vw, 5rem);
     // line-height: 106px;
     letter-spacing: -0.03em;
-
-   
 }
 
 .card::after{
   content:'';
   position: absolute;
   inset:0;
-  bottom: -10px;
+  transform: translateY(clamp(5px, 2vw, 10px));
   background-color: #1A1A24;
   border-radius: $borderRadius;
   z-index:-3;
@@ -158,4 +155,3 @@ $borderRadius: 0.15em;
     z-index: 5;
   }
 }
-
