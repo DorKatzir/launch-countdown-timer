@@ -132,25 +132,9 @@ body{
 }
 
 @media (max-width: 600px){
-  // body{
-  //   background-image: url('./images/bg-mobile.png');
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   background-position: top right;
-  //   aspect-ratio: 375/667;
-  // }
-
-  // .bg-stars{
-
-  //   background-image: none;
-  // }
-  // .bg-hills{
-  //   background-image: none;
-  // }
-
-  // .bg-grad{
-  //   background-image: none;
-  // }
+  main{
+      transform:translateY(50px);
+    }
 
 }
 

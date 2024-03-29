@@ -255,6 +255,11 @@ body {
   background-size: cover;
 }
 
+@media (max-width: 600px) {
+  main {
+    transform: translateY(50px);
+  }
+}
 /* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
 /** {
   scrollbar-width: thin;
