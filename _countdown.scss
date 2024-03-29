@@ -39,12 +39,10 @@ $borderRadius: 0.15em;
     position: relative; 
     padding-bottom: $halfHeight;
 
-    font-family: 'Red Hat Text';
-    font-style: normal;
-    font-weight: 700;
     font-size: 80px;
-    line-height: 106px;
+    // line-height: 106px;
     letter-spacing: -0.03em;
+
    
 }
 
@@ -69,7 +67,7 @@ $borderRadius: 0.15em;
 .card__back::after {
     display: block;
     height: $halfHeight;
-    color: var(--Soft-red);
+    color: darken(hsl(345, 70%, 68%), 11%);
     background: #2C2C44; // Dror
     padding: 0.25em 0.25em;
     border-radius: $borderRadius $borderRadius 0 0;
