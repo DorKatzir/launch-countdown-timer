@@ -42,12 +42,12 @@ body{
     }
 
     main{
+      padding-top: 110px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        gap: 110px;
-
+        // justify-content: center;
+        gap: clamp(60px, 20vw, 110px);
         text-transform: uppercase;
 
         .title{
@@ -58,12 +58,8 @@ body{
             text-align: center;  
         }
 
-
-        // .countdown{
-            
-            
+        // .countdown{   
         // }
-
 
     }
     
@@ -112,7 +108,6 @@ body{
 
 
 .bg-grad{
-    // height: 100dvh;
     background-image: linear-gradient(180deg, #1E1E28 0%, #241E2C 73.56%);
 }
 
@@ -126,12 +121,35 @@ body{
 }
 
 .bg-hills{
+    // display: none;
     width: min(100%, 1440px);
     height: 197px;
     background-image: url('./images/pattern-hills.svg');
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: cover;
+}
+
+@media (max-width: 600px){
+  body{
+    background-image: url('./images/bg-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .bg-stars{
+
+    background-image: url('');
+  }
+  .bg-hills{
+    background-image: url('');
+  }
+
+  .bg-grad{
+    background-image: url('');
+  }
+
 }
 
 

@@ -178,11 +178,11 @@ body {
   }
 }
 .wrapper main {
+  padding-top: 110px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 110px;
+  gap: clamp(60px, 20vw, 110px);
   text-transform: uppercase;
 }
 .wrapper main .title {
@@ -251,6 +251,23 @@ body {
   background-size: cover;
 }
 
+@media (max-width: 600px) {
+  body {
+    background-image: url("./images/bg-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .bg-stars {
+    background-image: url("");
+  }
+  .bg-hills {
+    background-image: url("");
+  }
+  .bg-grad {
+    background-image: url("");
+  }
+}
 /* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
 /** {
   scrollbar-width: thin;
