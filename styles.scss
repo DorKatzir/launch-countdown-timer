@@ -42,12 +42,12 @@ body{
     }
 
     main{
-      padding-top: 110px;
+      padding-top: clamp(50px, 1vw, 80px);
         display: flex;
         flex-direction: column;
         align-items: center;
         // justify-content: center;
-        gap: clamp(60px, 20vw, 110px);
+        gap: clamp(50px, 1vw, 80px);
         text-transform: uppercase;
 
         .title{
@@ -113,7 +113,8 @@ body{
 
 .bg-stars{
     width: min(100%, 1440px);
-    height: 569px;
+    // height: fit-content;
+    height: min(68dvh,569px);
     background-image: url('./images/bg-stars.svg');
     background-repeat: no-repeat;
     background-position: top right;
@@ -131,24 +132,25 @@ body{
 }
 
 @media (max-width: 600px){
-  body{
-    background-image: url('./images/bg-mobile.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
+  // body{
+  //   background-image: url('./images/bg-mobile.png');
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   background-position: top right;
+  //   aspect-ratio: 375/667;
+  // }
 
-  .bg-stars{
+  // .bg-stars{
 
-    background-image: url('');
-  }
-  .bg-hills{
-    background-image: url('');
-  }
+  //   background-image: none;
+  // }
+  // .bg-hills{
+  //   background-image: none;
+  // }
 
-  .bg-grad{
-    background-image: url('');
-  }
+  // .bg-grad{
+  //   background-image: none;
+  // }
 
 }
 
