@@ -40,13 +40,12 @@ body{
 
     main{
       height: min(68dvh,569px);
-      // padding-top: clamp(50px, 1vw, 80px);
       display: flex;
       flex-direction: column;
       align-items: center;
-      // justify-content: center;
-      gap: clamp(50px, 1vw, 80px);
+      gap: 10dvh;
       text-transform: uppercase;
+      transform: translateY(calc(-4dvh));
 
         .title{
             font-size: 24px;
@@ -54,6 +53,7 @@ body{
             margin-right: -0.26em;
             color: #FEFEFF; 
             text-align: center;  
+            
         }
 
         // .countdown{   
