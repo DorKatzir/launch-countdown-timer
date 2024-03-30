@@ -36,10 +36,10 @@ body{
     width: 100%;
     border-radius: 0px;
     
-    @media(min-width:1440px){
-        border-radius: 20px;
-        overflow: clip;
-    }
+    // @media(min-width:1440px){
+    //     border-radius: 20px;
+    //     overflow: clip;
+    // }
 
     main{
       height: min(68dvh,569px);
@@ -127,6 +127,8 @@ body{
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: cover;
+    position: fixed;
+    bottom: 0;
 }
 
 @media (max-width: 600px){
