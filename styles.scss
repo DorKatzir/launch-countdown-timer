@@ -28,22 +28,19 @@ body{
 @import 'countdown';
 
 .wrapper{
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    // padding-top: 140px;
-    max-width: 1440px;
-    width: 100%;
-    border-radius: 0px;
-    
-    // @media(min-width:1440px){
-    //     border-radius: 20px;
-    //     overflow: clip;
-    // }
+    justify-content: center;
+    // padding-top: clamp(50px, 2vw ,140px);
 
     main{
       height: min(68dvh,569px);
-      padding-top: clamp(50px, 1vw, 80px);
+      // padding-top: clamp(50px, 1vw, 80px);
       display: flex;
       flex-direction: column;
       align-items: center;

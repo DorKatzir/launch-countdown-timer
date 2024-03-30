@@ -168,16 +168,16 @@ body {
   }
 }
 .wrapper {
+  max-width: 1440px;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1440px;
-  width: 100%;
-  border-radius: 0px;
+  justify-content: center;
 }
 .wrapper main {
   height: min(68dvh, 569px);
-  padding-top: clamp(50px, 1vw, 80px);
   display: flex;
   flex-direction: column;
   align-items: center;
