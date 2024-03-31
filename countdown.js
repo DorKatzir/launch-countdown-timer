@@ -109,7 +109,7 @@ function Clock(countdown, callback) {
 	setTimeout(updateClock, 500)
 }
 
-var deadline = new Date(Date.parse(new Date()) + 12 * 24 * 60 * 60 * 1000)
+var deadline = new Date(Date.parse(new Date()) + 14 * 24 * 60 * 60 * 1000)
 var c = new Clock(deadline, function () {
 	alert('countdown complete')
 })
