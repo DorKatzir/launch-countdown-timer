@@ -62,7 +62,7 @@ $borderRadius: 0.15em;
 .card__back::after {
     display: block;
     height: $halfHeight;
-    color: darken(hsl(345, 70%, 68%), 11%);
+    color: darken(hsl(345, 40%, 68%), 20%);
     background: #2C2C44; // Dror
     padding: 0.25em 0.25em;
     border-radius: $borderRadius $borderRadius 0 0;
