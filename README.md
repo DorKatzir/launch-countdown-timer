@@ -12,7 +12,6 @@ This is a solution to the [Launch countdown timer challenge on Frontend Mentor](
   - [Built with](#built-with)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -55,9 +54,3 @@ Users should be able to:
 - Github - [Dror katzir](https://github.com/DorKatzir)
 - Frontend Mentor - [Dror Katzir](https://www.frontendmentor.io/profile/DorKatzir)
 
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
