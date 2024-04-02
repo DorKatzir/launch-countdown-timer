@@ -1,4 +1,3 @@
-<base target="_blank">
 # Launch countdown timer solution
 
 This is a solution to the [Launch countdown timer challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz-). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
@@ -32,7 +31,7 @@ Users should be able to:
 
 ### Links
 
--  [Live Site URL](https://dorkatzir.github.io/launch-countdown-timer/)
+-  [Live Site URL](https://dorkatzir.github.io/launch-countdown-timer/){:target="_blank"}
 
 ## My process
 
@@ -48,8 +47,8 @@ Users should be able to:
 
 ### Useful resources
 
-- [Figma](https://www.figma.com/file/4TmSnqVFU2ePu5OvigLYds/CountdownTimer?type=design&node-id=0%3A1&mode=design&t=4L0begMee8mp7S26-1) - Figma helped me to create a design system out of JPG file.
-- [Codepen](https://codepen.io/shshaw/pen/vKzoLL) - Codepen helped me to create the animation.
+- [Figma](https://www.figma.com/file/4TmSnqVFU2ePu5OvigLYds/CountdownTimer?type=design&node-id=0%3A1&mode=design&t=4L0begMee8mp7S26-1){:target="_blank"} - Figma helped me to create a design system out of JPG file.
+- [Codepen](https://codepen.io/shshaw/pen/vKzoLL){:target="_blank"} - Codepen helped me to create the animation.
 
 ## Author
 
