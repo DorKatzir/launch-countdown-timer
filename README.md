@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
--  [Live Site URL:](https://dorkatzir.github.io/launch-countdown-timer/)
+-  [Live Site URL](https://dorkatzir.github.io/launch-countdown-timer/)
 
 ## My process
 
